@@ -14,13 +14,13 @@
             {
                 _venta = new VentaCredito();
                 this.Text = "Venta de Credito";
-                TxtCortesia.Text= "Nope";
+                TxtCortesia.Text = "No";
             }
             else if (tipoVenta == "contado")
             {
                 _venta = new VentaContado();
                 this.Text = "Venta de Contado";
-                TxtCortesia.Text = "Nope";
+                TxtCortesia.Text = "No";
             }
             else
             {
@@ -106,6 +106,11 @@
         }
 
         private void TxtDescripcion_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtTotal_TextChanged(object sender, EventArgs e)
         {
 
         }

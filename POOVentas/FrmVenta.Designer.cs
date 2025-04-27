@@ -47,18 +47,20 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.Font = new Font("Britannic Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.Location = new Point(90, 40);
             label1.Name = "label1";
-            label1.Size = new Size(69, 20);
+            label1.Size = new Size(100, 26);
             label1.TabIndex = 0;
             label1.Text = "Cantidad";
             // 
             // label2
             // 
             label2.AutoSize = true;
+            label2.Font = new Font("Britannic Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.Location = new Point(90, 95);
             label2.Name = "label2";
-            label2.Size = new Size(87, 20);
+            label2.Size = new Size(130, 26);
             label2.TabIndex = 1;
             label2.Text = "Descripción";
             label2.Click += label2_Click;
@@ -75,9 +77,10 @@
             // 
             // btnAgregar
             // 
-            btnAgregar.Location = new Point(721, 193);
+            btnAgregar.Font = new Font("Britannic Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnAgregar.Location = new Point(694, 193);
             btnAgregar.Name = "btnAgregar";
-            btnAgregar.Size = new Size(94, 29);
+            btnAgregar.Size = new Size(94, 34);
             btnAgregar.TabIndex = 3;
             btnAgregar.Text = "Agregar";
             btnAgregar.UseVisualStyleBackColor = true;
@@ -102,9 +105,10 @@
             // label3
             // 
             label3.AutoSize = true;
+            label3.Font = new Font("Britannic Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label3.Location = new Point(90, 193);
             label3.Name = "label3";
-            label3.Size = new Size(100, 20);
+            label3.Size = new Size(151, 26);
             label3.TabIndex = 0;
             label3.Text = "Valor Unitario";
             // 
@@ -117,19 +121,21 @@
             // 
             // TxtTotal
             // 
-            TxtTotal.Location = new Point(814, 653);
+            TxtTotal.Location = new Point(305, 646);
             TxtTotal.Name = "TxtTotal";
             TxtTotal.ReadOnly = true;
             TxtTotal.Size = new Size(125, 27);
             TxtTotal.TabIndex = 4;
             TxtTotal.Text = "0.00";
             TxtTotal.TextAlign = HorizontalAlignment.Center;
+            TxtTotal.TextChanged += TxtTotal_TextChanged;
             // 
             // BtnEfectivo
             // 
-            BtnEfectivo.Location = new Point(463, 652);
+            BtnEfectivo.Font = new Font("Britannic Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            BtnEfectivo.Location = new Point(757, 644);
             BtnEfectivo.Name = "BtnEfectivo";
-            BtnEfectivo.Size = new Size(94, 29);
+            BtnEfectivo.Size = new Size(100, 45);
             BtnEfectivo.TabIndex = 5;
             BtnEfectivo.Text = "Efectivo";
             BtnEfectivo.UseVisualStyleBackColor = true;
@@ -137,9 +143,10 @@
             // 
             // BtnTarjeta
             // 
-            BtnTarjeta.Location = new Point(573, 652);
+            BtnTarjeta.Font = new Font("Britannic Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            BtnTarjeta.Location = new Point(863, 644);
             BtnTarjeta.Name = "BtnTarjeta";
-            BtnTarjeta.Size = new Size(94, 29);
+            BtnTarjeta.Size = new Size(94, 45);
             BtnTarjeta.TabIndex = 6;
             BtnTarjeta.Text = "Tarjeta";
             BtnTarjeta.UseVisualStyleBackColor = true;
@@ -148,16 +155,17 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(90, 652);
+            label4.Font = new Font("Britannic Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label4.Location = new Point(41, 647);
             label4.Name = "label4";
-            label4.Size = new Size(63, 20);
+            label4.Size = new Size(96, 26);
             label4.TabIndex = 7;
             label4.Text = "Cortesía";
             label4.Click += label4_Click;
             // 
             // TxtCortesia
             // 
-            TxtCortesia.Location = new Point(174, 649);
+            TxtCortesia.Location = new Point(153, 646);
             TxtCortesia.Name = "TxtCortesia";
             TxtCortesia.Size = new Size(125, 27);
             TxtCortesia.TabIndex = 8;
@@ -167,6 +175,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = Properties.Resources._9nxu2czi;
             ClientSize = new Size(1016, 701);
             Controls.Add(TxtCortesia);
             Controls.Add(label4);

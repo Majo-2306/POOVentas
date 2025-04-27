@@ -35,39 +35,47 @@
             // 
             // btnVentaCredito
             // 
-            btnVentaCredito.Location = new Point(180, 153);
+            btnVentaCredito.BackColor = SystemColors.ScrollBar;
+            btnVentaCredito.Font = new Font("Verdana", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnVentaCredito.ForeColor = SystemColors.Desktop;
+            btnVentaCredito.Location = new Point(74, 276);
             btnVentaCredito.Name = "btnVentaCredito";
-            btnVentaCredito.Size = new Size(149, 77);
+            btnVentaCredito.Size = new Size(250, 175);
             btnVentaCredito.TabIndex = 0;
             btnVentaCredito.Text = "VentaCrédito";
-            btnVentaCredito.UseVisualStyleBackColor = true;
+            btnVentaCredito.UseVisualStyleBackColor = false;
             btnVentaCredito.Click += btnVentaCredito_Click;
             // 
             // btnVentaContado
             // 
-            btnVentaContado.Location = new Point(458, 152);
+            btnVentaContado.BackColor = SystemColors.ScrollBar;
+            btnVentaContado.Font = new Font("Verdana", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnVentaContado.Location = new Point(388, 276);
             btnVentaContado.Name = "btnVentaContado";
-            btnVentaContado.Size = new Size(160, 78);
+            btnVentaContado.Size = new Size(250, 175);
             btnVentaContado.TabIndex = 1;
             btnVentaContado.Text = "VentaContado";
-            btnVentaContado.UseVisualStyleBackColor = true;
+            btnVentaContado.UseVisualStyleBackColor = false;
             btnVentaContado.Click += btnVentaContado_Click;
             // 
             // btnVentaCortesia
             // 
-            btnVentaCortesia.Location = new Point(309, 294);
+            btnVentaCortesia.BackColor = SystemColors.ScrollBar;
+            btnVentaCortesia.Font = new Font("Verdana", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnVentaCortesia.Location = new Point(702, 276);
             btnVentaCortesia.Name = "btnVentaCortesia";
-            btnVentaCortesia.Size = new Size(149, 77);
+            btnVentaCortesia.Size = new Size(250, 175);
             btnVentaCortesia.TabIndex = 2;
             btnVentaCortesia.Text = "VentaCortesía";
-            btnVentaCortesia.UseVisualStyleBackColor = true;
+            btnVentaCortesia.UseVisualStyleBackColor = false;
             btnVentaCortesia.Click += btnVentaCortesia_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackgroundImage = Properties.Resources._9nxu2czi;
+            ClientSize = new Size(1100, 674);
             Controls.Add(btnVentaCortesia);
             Controls.Add(btnVentaContado);
             Controls.Add(btnVentaCredito);
