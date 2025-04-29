@@ -4,7 +4,7 @@
     {
         public override decimal CalcularTotal()
         {
-            return 0; // La venta de cortesía no tiene costo
+            return 0; // Cuando sea venta de cortesia, no tienes que pagar nada.
         }
     }
     
