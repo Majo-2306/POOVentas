@@ -15,18 +15,27 @@
                 _venta = new VentaCredito();
                 this.Text = "Venta de Credito";
                 TxtCortesia.Text = "No";
+
+                BtnEfectivo.Visible = false; // esto nos ayudara a ocultar el boton de efectivo cuando la venta sea a credito
+                BtnTarjeta.Visible = true; // Con esto nos sera posible realizar el pago con tarjeta
             }
             else if (tipoVenta == "contado")
             {
                 _venta = new VentaContado();
                 this.Text = "Venta de Contado";
                 TxtCortesia.Text = "No";
+
+                BtnEfectivo.Visible= true;//Aqui seria el caso contrario al de venta credito
+                BtnTarjeta.Visible= false;//En este caso ocultara el boton de tarjeta cuando sea de contado
             }
             else
             {
                 _venta = new VentaCortesia();
                 this.Text = "Venta de Cortesia";
                 TxtCortesia.Text = "Sí";
+
+                BtnEfectivo.Visible= false;
+                BtnTarjeta.Visible = false;
             }
 
 
@@ -64,8 +73,8 @@
         {
             FormaPagoEfectivo efectivo = new FormaPagoEfectivo();
             AplicarPago(efectivo);
-
         }
+
         void AplicarPago(IFormaPago formaPago)
         {
             formaPago.Cobrar(_venta.Total);
@@ -114,5 +123,7 @@
         {
 
         }
+
+        
     }
 }
