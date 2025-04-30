@@ -41,6 +41,7 @@
             BtnTarjeta = new Button();
             label4 = new Label();
             TxtCortesia = new TextBox();
+            label5 = new Label();
             ((System.ComponentModel.ISupportInitialize)DgvConceptos).BeginInit();
             SuspendLayout();
             // 
@@ -121,7 +122,7 @@
             // 
             // TxtTotal
             // 
-            TxtTotal.Location = new Point(305, 646);
+            TxtTotal.Location = new Point(449, 644);
             TxtTotal.Name = "TxtTotal";
             TxtTotal.ReadOnly = true;
             TxtTotal.Size = new Size(125, 27);
@@ -133,7 +134,7 @@
             // BtnEfectivo
             // 
             BtnEfectivo.Font = new Font("Britannic Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            BtnEfectivo.Location = new Point(757, 644);
+            BtnEfectivo.Location = new Point(757, 635);
             BtnEfectivo.Name = "BtnEfectivo";
             BtnEfectivo.Size = new Size(100, 45);
             BtnEfectivo.TabIndex = 5;
@@ -144,7 +145,7 @@
             // BtnTarjeta
             // 
             BtnTarjeta.Font = new Font("Britannic Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            BtnTarjeta.Location = new Point(863, 644);
+            BtnTarjeta.Location = new Point(863, 635);
             BtnTarjeta.Name = "BtnTarjeta";
             BtnTarjeta.Size = new Size(94, 45);
             BtnTarjeta.TabIndex = 6;
@@ -171,12 +172,23 @@
             TxtCortesia.TabIndex = 8;
             TxtCortesia.TextChanged += TxtCortesia_TextChanged;
             // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Britannic Bold", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label5.Location = new Point(369, 644);
+            label5.Name = "label5";
+            label5.Size = new Size(61, 26);
+            label5.TabIndex = 9;
+            label5.Text = "Total";
+            // 
             // FrmVenta
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources._9nxu2czi;
             ClientSize = new Size(1016, 701);
+            Controls.Add(label5);
             Controls.Add(TxtCortesia);
             Controls.Add(label4);
             Controls.Add(BtnTarjeta);
@@ -213,5 +225,6 @@
         private Button BtnTarjeta;
         private Label label4;
         private TextBox TxtCortesia;
+        private Label label5;
     }
 }
